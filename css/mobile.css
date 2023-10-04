@@ -1,0 +1,404 @@
+:root {
+  --background: #fff;
+  /*   --background: #282828; */
+  --purple: #8d43ea;
+  --darker-purple: #5c23a2;
+  --border-3px: 1px solid;
+  --border-radius-15: 15px;
+  --heading-font: "Julius Sans One", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 2;
+  background-color: var(--background);
+  padding: 10px 0px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  background-color: var(--background);
+  width: 100vw;
+  top: 0px;
+  padding: 7px 2px;
+}
+
+.nav-menu {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  background-color: var(--background);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 200;
+  font-size: 1.25rem;
+}
+
+li a[aria-current="page"] {
+  /*   text-decoration: var(--purple) 2px underline; */
+}
+
+li a {
+  font-size: 1rem;
+  font-weight: 200;
+  padding: 10px 6px;
+}
+
+li a:hover {
+  background: #f1f1f1;
+  border-radius: var(--border-radius-15);
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  margin-top: 100px;
+}
+
+h1,
+h2,
+h3,
+.intro-text {
+  font-weight: 400;
+  font-family: var(--heading-font);
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 32px;
+}
+
+h3,
+.intro-text {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.text-color {
+  color: var(--purple);
+}
+
+.h2-underline-left {
+  width: 96%;
+  border-bottom: 2px solid var(--purple);
+  margin-left: 10px;
+}
+
+.h2-underline-right {
+  width: 96%;
+  border-bottom: 2px solid var(--purple);
+  text-align: end;
+}
+
+#section-1,
+#section-2,
+#section-3,
+#section-4 {
+  scroll-margin-top: 60px;
+}
+
+/* INTRODUCTION */
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.headshot-img {
+  width: 260px;
+}
+
+.intro h1 {
+  margin: auto;
+  padding-bottom: 27px;
+}
+
+.intro-text_layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-text {
+  padding: 6px 0px;
+}
+
+/*ABOUT ME*/
+
+.about-me-text {
+  max-width: 954px;
+  margin: 0px auto;
+  padding: 5px 35px;
+}
+
+/* TECHNICAL SKILLS & LINKS */
+
+.tech-skill-container,
+.links-container {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.links-container {
+  justify-content: flex-end;
+}
+
+.tech-skill,
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  background: #f1f1f1;
+  border-radius: var(--border-radius-15);
+  height: 112px;
+  width: 94px;
+}
+
+.tech-skill p,
+.links p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.tech-skill img,
+.links img {
+  height: 50px;
+}
+
+.links {
+  color: #000;
+  text-decoration: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.links:hover {
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* CURRICULUM VITAE */
+
+.cv-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 947px;
+  margin: auto;
+  width: 88%;
+}
+
+.cv-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cv-h3 {
+  margin: 25px auto 20px auto;
+}
+
+.references-request {
+  margin: 20px auto;
+}
+
+/* PROJECTS */
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  margin: 25px auto;
+  background: #f1f1f1;
+  /* background: #4a4a4a; */
+  border: 1px solid #85868c;
+  border-radius: var(--border-radius-15);
+  /*  max-width: 1000px; */
+  max-width: 450px;
+  width: 90%;
+}
+
+.project-img {
+  width: 90%;
+  display: block;
+  margin: 12px auto;
+}
+
+.project-h2 {
+  font-size: 1.85rem;
+  margin: 0px auto 10px auto;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 18px;
+  text-align: center;
+}
+
+.project-links-layout {
+  margin: 20px auto 20px auto;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.project-link {
+  color: var(--purple);
+  text-decoration: 1px underline;
+  font-size: 1rem;
+}
+
+.project-link:hover {
+  color: var(--darker-purple);
+}
+
+.fa-earth-americas,
+.fa-github {
+  margin-right: 5px;
+}
+/* CONTACT */
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  margin: 25px auto;
+  background: #f1f1f1;
+  border: 1px solid #85868c;
+  border-radius: var(--border-radius-15);
+  /* max-width: 950px; */
+  max-width: 450px;
+  width: 90%;
+}
+
+.contact-text_container {
+  margin: 20px auto 0px auto;
+}
+
+.contact-text {
+  font-family: var(--heading-font);
+  font-size: clamp(2rem, 2.25rem, 2.5rem);
+  text-align: center;
+}
+
+.envelope-icon {
+  width: 50px;
+}
+
+.envelope-icon-layout {
+  margin: 24px auto 18px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto 30px auto;
+}
+
+input,
+textarea {
+  display: block;
+  border: 1px solid #85868c;
+  border-radius: 3px;
+  margin: 5px 0px 15px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  max-width: 286px;
+  width: 80vw;
+  height: 40px;
+  padding: 10px 5px;
+}
+.label-input-alignment {
+  align-items: flex-start;
+}
+label {
+  font-size: 1.125rem;
+  font-weight: 200;
+  color: #4a4a4a;
+  text-align: left;
+}
+
+textarea {
+  height: 140px;
+  max-width: 286px;
+  width: 80vw;
+  padding: 10px 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  resize: none;
+}
+
+.form-error {
+  display: none;
+}
+
+button {
+  color: #fff;
+  background-color: var(--purple);
+  font-size: 1.125rem;
+  padding: 8px 20px;
+  border-radius: var(--border-radius-15);
+  margin: auto;
+}
+
+button:hover {
+  background-color: #dfc6ff;
+  color: #000;
+}
+
+.cta-send {
+  display: block;
+  border-width: 0px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+footer {
+  margin: 15px auto;
+  text-align: center;
+}
