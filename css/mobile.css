@@ -1,3 +1,5 @@
+/* This */
+
 :root {
   --background: #fff;
   /*   --background: #282828; */
@@ -317,6 +319,7 @@ footer {
   margin: 15px auto;
   text-align: center;
 }
+
 /*TABLET*/
 @media only screen and (min-width: 730px) {
   body {
