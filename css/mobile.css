@@ -62,10 +62,6 @@ a {
   font-size: 1.25rem;
 }
 
-li a[aria-current="page"] {
-  /*   text-decoration: var(--purple) 2px underline; */
-}
-
 li a {
   font-size: 1rem;
   font-weight: 200;
@@ -79,7 +75,7 @@ li a:hover {
 
 body {
   font-family: "IBM Plex Sans", sans-serif;
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 h1,
@@ -149,11 +145,6 @@ p {
   width: 260px;
 }
 
-.intro h1 {
-  margin: auto;
-  padding-bottom: 27px;
-}
-
 .intro-text_layout {
   display: flex;
   flex-direction: column;
@@ -171,10 +162,10 @@ p {
   padding: 5px 35px;
 }
 
-/* TECHNICAL SKILLS & LINKS */
+/* TECHNICAL SKILLS & CONTACT LINKS */
 
 .tech-skill-container,
-.links-container {
+.contact-container {
   display: flex;
   gap: 24px;
   justify-content: center;
@@ -183,12 +174,12 @@ p {
   flex-wrap: wrap;
 }
 
-.links-container {
-  justify-content: flex-end;
+.contact-container {
+  justify-content: flex-start;
 }
 
 .tech-skill,
-.links {
+.contact-button {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -200,23 +191,23 @@ p {
 }
 
 .tech-skill p,
-.links p {
+.contact-button p {
   font-size: 1rem;
   text-align: center;
 }
 
 .tech-skill img,
-.links img {
+.contact-button img {
   height: 50px;
 }
 
-.links {
+.contact-button {
   color: #000;
   text-decoration: none;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
-.links:hover {
+.contact-button:hover {
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
 }
 
@@ -277,6 +268,10 @@ p {
   text-align: center;
 }
 
+.project-text p {
+  margin-bottom: 20px;
+}
+
 .project-links-layout {
   margin: 20px auto 20px auto;
   display: flex;
@@ -285,120 +280,201 @@ p {
 }
 
 .project-link {
-  color: var(--purple);
-  text-decoration: 1px underline;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  background-image: linear-gradient(to right, #000, var(--darker-purple) 50%, var(--purple) 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
 }
 
 .project-link:hover {
-  color: var(--darker-purple);
+  background-position: 0;
 }
+
+/* .project-link {
+  color: var(--purple);
+  font-size: 1rem;
+  padding: 3px 5px;
+  border: 1px solid transparent;
+}
+
+.project-link:hover {
+  color: #000;
+} */
 
 .fa-earth-americas,
 .fa-github {
   margin-right: 5px;
 }
-/* CONTACT */
-
-.contact-card {
-  display: flex;
-  flex-direction: column;
-  margin: 25px auto;
-  background: #f1f1f1;
-  border: 1px solid #85868c;
-  border-radius: var(--border-radius-15);
-  /* max-width: 950px; */
-  max-width: 450px;
-  width: 90%;
-}
-
-.contact-text_container {
-  margin: 20px auto 0px auto;
-}
-
-.contact-text {
-  font-family: var(--heading-font);
-  font-size: clamp(2rem, 2.25rem, 2.5rem);
-  text-align: center;
-}
-
-.envelope-icon {
-  width: 50px;
-}
-
-.envelope-icon-layout {
-  margin: 24px auto 18px auto;
-  display: flex;
-  justify-content: center;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  margin: 10px auto 30px auto;
-}
-
-input,
-textarea {
-  display: block;
-  border: 1px solid #85868c;
-  border-radius: 3px;
-  margin: 5px 0px 15px 0px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-}
-
-input[type="text"],
-input[type="email"] {
-  max-width: 286px;
-  width: 80vw;
-  height: 40px;
-  padding: 10px 5px;
-}
-.label-input-alignment {
-  align-items: flex-start;
-}
-label {
-  font-size: 1.125rem;
-  font-weight: 200;
-  color: #4a4a4a;
-  text-align: left;
-}
-
-textarea {
-  height: 140px;
-  max-width: 286px;
-  width: 80vw;
-  padding: 10px 5px;
-  font-family: Arial, Helvetica, sans-serif;
-  resize: none;
-}
-
-.form-error {
-  display: none;
-}
-
-button {
-  color: #fff;
-  background-color: var(--purple);
-  font-size: 1.125rem;
-  padding: 8px 20px;
-  border-radius: var(--border-radius-15);
-  margin: auto;
-}
-
-button:hover {
-  background-color: #dfc6ff;
-  color: #000;
-}
-
-.cta-send {
-  display: block;
-  border-width: 0px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-}
 
 footer {
   margin: 15px auto;
   text-align: center;
+}
+/*TABLET*/
+@media only screen and (min-width: 730px) {
+  body {
+    margin-top: 100px;
+  }
+
+  .main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    padding: 7px 2px;
+  }
+
+  .nav-menu {
+    gap: 60px;
+  }
+
+  li a {
+    font-size: 1.8rem;
+    padding: 3px 12px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.875rem;
+    margin-top: 50px;
+  }
+
+  h3,
+  .intro-text {
+    font-size: 2.25rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  .h2-underline-left {
+    width: 92%;
+    margin-left: 122px;
+  }
+
+  .h2-underline-right {
+    width: 92%;
+    margin-right: 122px;
+  }
+
+  #section-1,
+  #section-2,
+  #section-3,
+  #section-4 {
+    scroll-margin-top: 100px;
+  }
+
+  /* INTRODUCTION */
+
+  .intro {
+    display: flex;
+    flex-direction: row;
+    gap: 107px;
+    justify-content: center;
+  }
+
+  .headshot {
+    width: 303px;
+  }
+
+  .intro h1 {
+    margin: auto;
+    padding-bottom: 27px;
+  }
+
+  .intro-text_layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro-text {
+    text-align: left;
+  }
+
+  /* ABOUT ME */
+
+  .about-me-text {
+    margin: 20px auto;
+  }
+
+  /* TECHNICAL SKILLS & LINKS */
+
+  .tech-skill-container {
+    justify-content: end;
+    margin: 20px;
+  }
+
+  /* CURRICULUM VITAE */
+
+  .cv-container {
+    display: flex;
+    flex-direction: row;
+    gap: 210px;
+    max-width: 947px;
+  }
+
+  .cv-text {
+    gap: 34px;
+  }
+
+  .cv-h3 {
+    margin: 50px auto 20px auto;
+  }
+
+  /* PROJECTS */
+
+  .project-card {
+    display: flex;
+    flex-direction: row;
+    margin: 25px auto;
+    background: #f1f1f1;
+    /* background: #4a4a4a; */
+    border: 1px solid #85868c;
+    border-radius: var(--border-radius-15);
+    max-width: 1000px;
+  }
+
+  .project-img {
+    width: 300px;
+    display: block;
+    margin: 24px;
+  }
+
+  .project-h2 {
+    font-size: 2rem;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .project-text {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .project-links-layout {
+    margin: 20px 0px 20px 0px;
+  }
+
+  .fa-earth-americas,
+  .fa-github {
+    margin-right: 5px;
+  }
 }

@@ -33,13 +33,14 @@
     </nav>
     </header>
     <main>
-      <section id="section-1" class="intro">
+      <div class="main-wrapper">
+        <section id="section-1" class="intro">
           <img src="images/headshot.jpg" class="headshot-img" alt="Headshot of Charlotte Valset" />
+        <div class="intro-text_layout">
           <h1>Charlotte Valset</h1>
-          <div class="intro-text_layout">
-            <p class="intro-text"><span class="text-color">Front-end</span> developer</p>
-            <p class="intro-text"><span class="text-color">UX</span> designer</p>  
-          </div>
+          <p class="intro-text"><span class="text-color">Front-end</span> developer</p>
+          <p class="intro-text"><span class="text-color">UX</span> designer</p>  
+        </div>
       </section>
       <section id="section-2">
         <h2 class="h2-underline-left">About me</h2>
@@ -164,7 +165,7 @@
           </div>
           <div class="project-card">
 
-              <img src="images/communityScienceMuseum.png" class="project-img" alt="Screenshot of Community Science Museum Website">
+              <img src="images/cvsemesterproject.png" class="project-img" alt="Screenshot of Community Science Museum Website">
 
             <div class="project-text">
               <h2 class="project-h2">Community Science Museum</h2>
@@ -179,7 +180,7 @@
           </div>
           <div class="project-card">
 
-              <img src="images/myCoffeeCorner.png" class="project-img" alt="Screenshot of My Coffee Corner blog website">
+              <img src="images/mycoffeecorner.png" class="project-img" alt="Screenshot of My Coffee Corner blog website">
 
             <div class="project-text">
               <h2 class="project-h2">My Coffee Corner</h2>
@@ -198,63 +199,30 @@
       </section>
       <section id="section-4">
         <h2 class="h2-underline-left">Contact</h2>
-        <div class="contact-card">
-            <div class="contact-text_container">
-                <p class="contact-text">for any</p>
-                <p class="contact-text text-color">inquiries</p>
-                <p class="contact-text">please</p>
-                <p class="contact-text">contact me</p>
-                <div class="envelope-icon-layout">
-                  <img src="images/envelope.svg" class="envelope-icon" alt="Image of a purple envelope">
-                </div>
-            </div>
-            <form action="message-sent.html" id="contact-form" class="contact-form" novalidate>
-              <div class="label-input-alignment">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" required />
-                <div class="form-error" id="nameError">Name must be over 2 characters.</div>
-              </div>
-              <div class="label-input-alignment">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" />
-                <div class="form-error" id="emailError">Please enter a valid email address</div>
-              </div>
-              <div class="label-input-alignment">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
-                <div class="form-error" id="messageError">Message must be over 15 characters.</div>
-              </div>
-              <div class="cta-contact-layout">
-                <button type="submit" class="cta-send">Send message</button>
-              </div>
-            </form>
-
-          </div>
-      </section>
-      <section>
-        <h2 class="h2-underline-right">Links</h2>
-        <div class="links-container">
-          <a href="https://github.com/CharlotteValset" target="_blank" rel="noopener noreferrer">
-            <div class="links">
-              <img src="images/github.svg" alt="Logo of Github">
-              <p>Github</p>
-            </div>
-          </a>
-          <a href="https://www.linkedin.com/in/charlotte-valset-6195b521a/" target="_blank" rel="noopener noreferrer">
-            <div class="links">
-              <img src="images/linkedin-icon.svg" alt="Logo of LinkedIn">
-              <p>LinkedIn</p>
-            </div>
-          </a>
-          <a href="mailto: abc@example.com">
-            <div class="links">
+        <div class="contact-container">
+          <a href="mailto: charlottevalset@gmail.com">
+            <div class="contact-button">
               <img class="email-icon" src="images/at-symbol.svg" alt="An @ icon">
               <p>Email</p>
             </div>  
           </a>
+          <a href="https://www.linkedin.com/in/charlotte-valset-6195b521a/" target="_blank" rel="noopener noreferrer">
+            <div class="contact-button">
+              <img src="images/linkedin-icon.svg" alt="Logo of LinkedIn">
+              <p>LinkedIn</p>
+            </div>
+          </a>
+          <a href="https://github.com/CharlotteValset" target="_blank" rel="noopener noreferrer">
+            <div class="contact-button">
+              <img src="images/github.svg" alt="Logo of Github">
+              <p>Github</p>
+            </div>
+          </a>
         </div>
       </section>
     </main>
+
+      </div>
     <footer>
         <p>Copyright &copy; Designed & developed by Charlotte Valset
         </p>
