@@ -1,8 +1,8 @@
 # Charlotte Valset - Portfolio
 
-![image](images/)
+![image](images/cv-portfolio.png)
 
-[Charlotte Valset - Portfolio](https://charlottevalset-portfolio.netlify.app) I am a front-end developer and a ux designer, please check out my portfolio.
+I am a front-end developer and a ux designer, please check out my portfolio - [Charlotte Valset - Portfolio](https://charlottevalset-portfolio.netlify.app)
 
 ## Description
 
