@@ -168,8 +168,9 @@ p {
   font-size: 26px;
   margin-top: 10px;
   color: var(--purple);
-  padding: 5px 10px;
-  width: 145px;
+  padding: 2px 3px;
+  text-align: center;
+  width: 133px;
 }
 
 .get-in-touch_cta:hover {
@@ -325,11 +326,6 @@ footer {
   .main-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-
-  nav {
-    padding: 7px 2px;
   }
 
   .nav-menu {
@@ -342,7 +338,7 @@ footer {
   }
 
   h1 {
-    font-size: 3.5rem;
+    font-size: 3.3rem;
   }
 
   h2 {
@@ -363,12 +359,6 @@ footer {
     font-size: 1.25rem;
   }
 
-  .h2-underline::after {
-    content: "";
-    display: block;
-    border-bottom: 2px solid var(--purple);
-  }
-
   #section-1,
   #section-2,
   #section-3,
@@ -377,19 +367,23 @@ footer {
   #section-2-cv {
     scroll-margin-top: 100px;
     max-width: 900px;
-    width: 75%;
+  }
+
+  .h2-underline::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid var(--purple);
   }
 
   /* INTRODUCTION */
 
   .intro {
-    display: flex;
     flex-direction: row;
     gap: 107px;
     justify-content: center;
   }
 
-  .headshot {
+  .headshot-img {
     width: 303px;
   }
 
@@ -398,27 +392,21 @@ footer {
     padding-bottom: 27px;
   }
 
-  .intro-text_layout {
-    display: flex;
-    flex-direction: column;
-  }
-
   .intro-text {
     text-align: left;
   }
 
   .get-in-touch_cta {
-    width: 160px;
+    width: 147px;
   }
 
   /* ABOUT ME */
 
   .about-me-text {
-    margin: 20px auto;
     width: 85%;
   }
 
-  /* TECHNICAL SKILLS & LINKS */
+  /* TECHNICAL SKILLS & CONTACT LINKS */
 
   .tech-skill-container {
     justify-content: end;
@@ -428,10 +416,8 @@ footer {
   /* CURRICULUM VITAE */
 
   .cv-container {
-    display: flex;
     flex-direction: row;
     gap: 210px;
-    max-width: 947px;
   }
 
   .cv-text {
@@ -494,11 +480,6 @@ footer {
 
     .project-link {
       padding: 0px;
-    }
-
-    .fa-earth-americas,
-    .fa-github {
-      margin-right: 5px;
     }
   }
 }
