@@ -107,7 +107,7 @@ h4 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 200;
 }
 
@@ -123,7 +123,7 @@ p {
 #section-2-cv {
   scroll-margin-top: 60px;
   margin: 20px auto;
-  width: 75%;
+  width: 90%;
   max-width: 479px;
 }
 
@@ -162,6 +162,19 @@ p {
 
 .intro-text {
   padding: 6px 0px;
+}
+
+.get-in-touch_cta {
+  font-size: 26px;
+  margin-top: 10px;
+  color: var(--purple);
+  padding: 5px 10px;
+  width: 135px;
+}
+
+.get-in-touch_cta:hover {
+  background: #f1f1f1;
+  border-radius: var(--border-radius-15);
 }
 
 /*ABOUT ME*/
@@ -247,8 +260,6 @@ p {
   flex-direction: column;
   margin: 25px auto;
   background: #f1f1f1;
-  /* background: #4a4a4a; */
-  border: 1px solid #85868c;
   border-radius: var(--border-radius-15);
   max-width: 600px;
   width: 90%;
@@ -394,6 +405,10 @@ footer {
 
   .intro-text {
     text-align: left;
+  }
+
+  .get-in-touch_cta {
+    width: 160px;
   }
 
   /* ABOUT ME */
