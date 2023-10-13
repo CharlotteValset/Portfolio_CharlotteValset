@@ -169,12 +169,12 @@ p {
   margin-top: 10px;
   color: var(--purple);
   padding: 5px 10px;
-  width: 135px;
+  width: 145px;
 }
 
 .get-in-touch_cta:hover {
   background: #f1f1f1;
-  border-radius: var(--border-radius-15);
+  border-radius: 10px;
 }
 
 /*ABOUT ME*/
@@ -451,13 +451,8 @@ footer {
     /* PROJECTS */
 
     .project-card {
-      display: flex;
       flex-direction: row;
       margin: 25px auto;
-      background: #f1f1f1;
-      /* background: #4a4a4a; */
-      border: 1px solid #85868c;
-      border-radius: var(--border-radius-15);
       max-width: 1000px;
     }
 
