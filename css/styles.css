@@ -270,6 +270,7 @@ p {
   width: 90%;
   display: block;
   margin: 20px auto;
+  box-shadow: 1px 1px 3px 0px lightgray;
 }
 
 .project-h2 {
@@ -410,7 +411,7 @@ footer {
 
   .tech-skill-container {
     justify-content: end;
-    margin: 20px 50px 20px 20px;
+    margin: 20px 50px 20px 280px;
   }
 
   /* CURRICULUM VITAE */
